@@ -51,3 +51,8 @@ scrape_configs:
 
     static_configs:
       - targets: ['pushgateway:9091']
+
+  - job_name: 'docker-host'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.88.46:9107']
